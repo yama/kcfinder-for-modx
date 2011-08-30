@@ -23,14 +23,15 @@ function openKCFinder(field_name, url, type, win)
 			return false;
 	}
 	
-	tinyMCE.activeEditor.windowManager.open(
+	wm = tinyMCE.activeEditor.windowManager;
+	wm.open(
 	{
 		file: '[+kcf_url+]kcfinder/browse.php?opener=tinymce&type=' + type + '&langCode=[+lang_code+]',
 		title: 'KCFinder',
 		width: 700,
 		height: 500,
 		resizable: "yes",
-		inline: "yes",
+		inline: true,
 		close_previous: "no",
 		popup_css: false
 	},
