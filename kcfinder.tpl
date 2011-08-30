@@ -12,6 +12,7 @@
  */
 
 /* Add line tinymce plugin property custom config "file_browser_callback: 'openKCFinder'" */
+$version  = '2.51';
 $kcf_dir  = 'kcfinder';
 $kcf_path = MODX_BASE_PATH . 'assets/plugins/' . $kcf_dir . '/';
 $kcf_url  = MODX_BASE_URL  . 'assets/plugins/' . $kcf_dir . '/';
@@ -41,4 +42,5 @@ $lang_code = $kcf->get_kcf_lang($modx->config['manager_language']);
 $js = file_get_contents($kcf_path . 'fb.js');
 $js = str_replace('[+kcf_url+]',   $kcf_url,   $js);
 $js = str_replace('[+lang_code+]', $lang_code, $js);
+$js = str_replace('[+version+]', $version, $js);
 $modx->Event->output($js);
