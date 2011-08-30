@@ -76,9 +76,9 @@ $_CONFIG = array(
 
 
 
-$base_url  = reset(explode('/assets/', $_SERVER['REQUEST_URI']));
+$base_url  = preg_replace('@(.*)/assets/.*@', '$1', $_SERVER['REQUEST_URI']);
 $base_url  = rtrim($base_url,'/') . '/';
-$base_path = reset(explode("/assets/", str_replace("\\", "/", dirname(__FILE__))));
+$base_path = preg_replace('@(.*)/assets/.*@', '$1', str_replace("\\", "/", dirname(__FILE__)));
 $base_path = rtrim($base_path,'/') . '/';
 include_once($base_path . 'assets/cache/kcf_config.php');
 if($config['rb_base_url']!=='/') $upload_url = rtrim($config['rb_base_url'], '/');
