@@ -7,7 +7,7 @@
  * @category 	plugin
  * @version 	2.51
  * @license 	http://www.opensource.org/licenses/gpl-2.0.php GNU Public License Version 2 (GPL2)
- * @internal	@events OnDocFormRender
+ * @internal	@events OnDocFormRender, OnChunkFormRender
  * @internal	@modx_category Manager and Admin
  */
 
