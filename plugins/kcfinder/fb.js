@@ -26,7 +26,7 @@ function openKCFinder(field_name, url, type, win)
 	wm = tinyMCE.activeEditor.windowManager;
 	wm.open(
 	{
-		file: '[+kcf_url+]kcfinder/browse.php?opener=tinymce&type=' + type + '&langCode=[+lang_code+]&version=[+version+]',
+		file: '[+kcf_url+]kcfinder/browse.php?opener=tinymce&type=' + type + '&langCode=[+lang_code+]',
 		title: 'KCFinder',
 		width: 700,
 		height: 500,
@@ -45,12 +45,12 @@ BrowseServer = function (ctrl) {
 	lastImageCtrl = ctrl;
 	var w = screen.width * 0.7;
 	var h = screen.height * 0.7;
-	OpenServerBrowser('[+kcf_url+]kcfinder/browse.php?type=images&langCode=[+lang_code+]&version=[+version+]', w, h);
+	OpenServerBrowser('[+kcf_url+]kcfinder/browse.php?type=images&langCode=[+lang_code+]', w, h);
 }
 BrowseFileServer = function (ctrl) {
 	lastFileCtrl = ctrl;
 	var w = screen.width * 0.7;
 	var h = screen.height * 0.7;
-	OpenServerBrowser('[+kcf_url+]kcfinder/browse.php?type=files&langCode=[+lang_code+]&version=[+version+]', w, h);
+	OpenServerBrowser('[+kcf_url+]kcfinder/browse.php?type=files&langCode=[+lang_code+]', w, h);
 }
 </script>
