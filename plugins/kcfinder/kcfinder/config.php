@@ -101,27 +101,33 @@ $_CONFIG = array(
     //'_sessionPath' => "/my/path",
 );
 
-$base_url  = preg_replace('@(.*)/assets/.*@', '$1', $_SERVER['REQUEST_URI']);
-$base_url  = rtrim($base_url,'/') . '/';
-$base_path = preg_replace('@(.*)/assets/.*@', '$1', str_replace("\\", "/", dirname(__FILE__)));
-$base_path = rtrim($base_path,'/') . '/';
-include_once($base_path . 'assets/cache/kcf_config.php');
-if($config['rb_base_url']!=='/') $upload_url = rtrim($config['rb_base_url'], '/');
-$upload_dir = rtrim($config['rb_base_dir'], '/');
-$host = getenv('SERVER_NAME');
+// modx settings
 
+if(!isset($modx))
+{
+	global $database_server,$database_user,$database_password,$database_connection_charset,$database_connection_method,$dbase,$site_sessionname,$https_port,$database_type;
+	define('IN_MANAGER_MODE', 'true');
+	define('MODX_API_MODE', true);
+	$base_path = preg_replace('@(.*)/assets/.*@', '$1', str_replace('\\', '/', dirname(__FILE__)));
+	$base_path = rtrim($base_path,'/') . '/';
+	include_once("{$base_path}manager/includes/config.inc.php");
+	startCMSSession();
+}
+
+if(2 < count(explode(':',$host))) $host = substr($host,0,strrpos(':',$host));
 $_CONFIG['disabled']        = false;
-$_CONFIG['uploadURL']       = $base_url . $upload_url;
-$_CONFIG['uploadDir']       = $upload_dir;
+//echo $upload_url;exit;
+$_CONFIG['uploadURL']       = $_SESSION['kcf_upload_url'];
+$_CONFIG['uploadDir']       = $_SESSION['kcf_upload_dir'];
 $_CONFIG['mime_magic']      = '';
 $_CONFIG['maxImageWidth']   = 800;
-$_CONFIG['maxImageHeight']  = 600;
+$_CONFIG['maxImageHeight']  = 800;
 $_CONFIG['thumbWidth']      = 75;
 $_CONFIG['thumbHeight']     = 75;
-$_CONFIG['thumbsDir']       = 'cache/.thumbs';
+$_CONFIG['thumbsDir']       = '.thumbs';
 $_CONFIG['jpegQuality']     = 80;
-$_CONFIG['cookieDomain']    = $host;
+$_CONFIG['cookieDomain']    = $_SESSION['kcf_http_host'];
 $_CONFIG['cookiePath']      = '';
 $_CONFIG['cookiePrefix']    = 'KCFINDER_';
 $_CONFIG['_check4htaccess'] = false;
-$_CONFIG['_tinyMCEPath']    = $base_url . 'assets/plugins/tinymce/jscripts/tiny_mce';
+$_CONFIG['_tinyMCEPath']    = $_SESSION['kcf_mce_path'];

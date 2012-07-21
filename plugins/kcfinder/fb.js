@@ -41,6 +41,22 @@ function openKCFinder(field_name, url, type, win)
 	});
 		return false;
 }
+OpenServerBrowser = function(url, width, height ) {
+	var iLeft = (screen.width  - width) / 2 ;
+	var iTop  = (screen.height - height) / 2 ;
+
+	var sOptions = 'toolbar=no,status=no,resizable=yes,dependent=yes' ;
+	sOptions += ',width=' + width ;
+	sOptions += ',height=' + height ;
+	sOptions += ',left=' + iLeft ;
+	sOptions += ',top=' + iTop ;
+
+	var oWindow = window.open( url, 'KCFinder', sOptions ) ;
+}
+
+var lastImageCtrl;
+var lastFileCtrl;
+
 BrowseServer = function (ctrl) {
 	lastImageCtrl = ctrl;
 	var w = screen.width * 0.7;
@@ -53,4 +69,18 @@ BrowseFileServer = function (ctrl) {
 	var h = screen.height * 0.7;
 	OpenServerBrowser('[+kcf_url+]kcfinder/browse.php?type=files&langCode=[+lang_code+]', w, h);
 }
+	SetUrl = function (url, width, height, alt)
+	{
+		if(lastFileCtrl) {
+			var c = document.mutate[lastFileCtrl];
+			if(c) c.value = url;
+			lastFileCtrl = '';
+		} else if(lastImageCtrl) {
+			var c = document.mutate[lastImageCtrl];
+			if(c) c.value = url;
+			lastImageCtrl = '';
+		} else {
+			return;
+		}
+	}
 </script>
