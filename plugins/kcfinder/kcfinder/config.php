@@ -108,8 +108,8 @@ if(!isset($modx))
 	global $database_server,$database_user,$database_password,$database_connection_charset,$database_connection_method,$dbase,$site_sessionname,$https_port,$database_type;
 	define('IN_MANAGER_MODE', 'true');
 	define('MODX_API_MODE', true);
-	$base_path = preg_replace('@(.*)/assets/.*@', '$1', str_replace('\\', '/', dirname(__FILE__)));
-	$base_path = rtrim($base_path,'/') . '/';
+	$self = 'assets/plugins/kcfinder/kcfinder/config.php';
+	$base_path = str_replace($self, '', str_replace('\\','/', __FILE__));
 	include_once("{$base_path}manager/includes/config.inc.php");
 	startCMSSession();
 }
