@@ -4,7 +4,7 @@
   * 
   * @desc Japanese localization
   * @package KCFinder
-  * @version 2.51
+  * @version 2.53
   * @author yama {hidden email}
   * @license http://www.opensource.org/licenses/gpl-2.0.php GPLv2
   * @license http://www.opensource.org/licenses/lgpl-2.1.php LGPLv2
@@ -33,12 +33,12 @@ $lang = array(
     "Unknown image format/encoding." => "この画像ファイルの種別を判定できません。",
     "The image is too big and/or cannot be resized." => "画像ファイルのサイズが大き過ぎます。",
     "Cannot create {dir} folder." => "「{dir}」フォルダを作成できません。",
-    "Cannot rename the folder." => "フォルダの名前を変更できません",
+    "Cannot rename the folder." => "フォルダ名を変更できません",
     "Cannot write to upload folder." => "アップロードフォルダに書き込みできません。",
     "Cannot read .htaccess" => ".htaccessが読み込めません。",
     "Incorrect .htaccess file. Cannot rewrite it!" => "不正な .htaccess ファイルです。再編集できません!",
     "Cannot read upload folder." => "アップロードフォルダを読み取れません。",
-    "Cannot access or create thumbnails folder." => "サムネイルフォルダにアクセス、またはサムネイルフォルダを作成できません。",
+    "Cannot access or create thumbnails folder." => "サムネイルフォルダにアクセス、または作成できません。",
     "Cannot access or write to upload folder." => "アップロードフォルダにアクセス、または書き込みできません。",
     "Please enter new folder name." => "新しいフォルダ名を入力して下さい。",
     "Unallowable characters in folder name." => "フォルダ名に使用できない文字が含まれています。",
