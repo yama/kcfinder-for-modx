@@ -23,12 +23,22 @@ function openKCFinder(field_name, url, type, win)
 			return false;
 	}
 
-	var dir = type;
+	var dir;
 	if(url.substr(0,'[+rb_url+]'.length)=='[+rb_url+]')
 	{
 		dir = url.substr('[+rb_url+]'.length);
-		dir = dir.substr(0,dir.lastIndexOf('/'));
 	}
+	else if(url.substr(0,1)==='/')
+	{
+		dir = url.substr(('[+base_url+]'+'[+rb_base_url+]').length);
+	}
+	else if(url!=false)
+	{
+		dir = url.substr('[+rb_base_url+]'.length);
+	}
+	else dir = type;
+	
+	if(dir!=type) dir = dir.substr(0,dir.lastIndexOf('/'));
 	
 	wm = tinyMCE.activeEditor.windowManager;
 	wm.open(

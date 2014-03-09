@@ -39,7 +39,9 @@ class KCFINDER
 			$lang_code = $this->lang_code($modx->config['manager_language']);
 			$js = str_replace('[+kcf_url+]',   $this->kcf_url,   $js);
 			$js = str_replace('[+lang_code+]', $lang_code, $js);
+			$js = str_replace('[+base_url+]', $modx->config['base_url'], $js);
 			$js = str_replace('[+rb_url+]', $modx->config['site_url'].$modx->config['rb_base_url'], $js);
+			$js = str_replace('[+rb_base_url+]', $modx->config['rb_base_url'], $js);
 			$modx->event->output($js);
 		}
 		return;
