@@ -23,7 +23,7 @@ function openKCFinder(field_name, url, type, win)
 			return false;
 	}
 
-	var dir;
+	var dir = '';
 	if(url.substr(0,'[+rb_url+]'.length)=='[+rb_url+]')
 	{
 		dir = url.substr('[+rb_url+]'.length);
@@ -36,14 +36,14 @@ function openKCFinder(field_name, url, type, win)
 	{
 		dir = url.substr('[+rb_base_url+]'.length);
 	}
-	else dir = type;
 	
-	if(dir!=type) dir = dir.substr(0,dir.lastIndexOf('/'));
+	var kcf_url = '[+kcf_url+]kcfinder/browse.php?opener=tinymce&type=' + type + '&langCode=[+lang_code+]';
+	if(dir!='') kcf_url = kcf_url + '&dir=' + dir.substr(0,dir.lastIndexOf('/'));
 	
 	wm = tinyMCE.activeEditor.windowManager;
 	wm.open(
 	{
-		file: '[+kcf_url+]kcfinder/browse.php?opener=tinymce&type=' + type + '&langCode=[+lang_code+]&dir=' + dir,
+		file: kcf_url,
 		title: 'KCFinder',
 		width: 700,
 		height: 500,
