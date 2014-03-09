@@ -22,11 +22,18 @@ function openKCFinder(field_name, url, type, win)
 		default:
 			return false;
 	}
+
+	var dir = type;
+	if(url.substr(0,'[+rb_url+]'.length)=='[+rb_url+]')
+	{
+		dir = url.substr('[+rb_url+]'.length);
+		dir = dir.substr(0,dir.lastIndexOf('/'));
+	}
 	
 	wm = tinyMCE.activeEditor.windowManager;
 	wm.open(
 	{
-		file: '[+kcf_url+]kcfinder/browse.php?opener=tinymce&type=' + type + '&langCode=[+lang_code+]',
+		file: '[+kcf_url+]kcfinder/browse.php?opener=tinymce&type=' + type + '&langCode=[+lang_code+]&dir=' + dir,
 		title: 'KCFinder',
 		width: 700,
 		height: 500,
