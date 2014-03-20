@@ -708,7 +708,12 @@ class browser extends uploader {
             return $return;
 
         foreach ($files as $file) {
-            $size = @getimagesize($file);
+            $img = new fastImage($file);
+            $type = $img->getType();
+
+            if ($type !== false) {
+                $size = $img->getSize($file);
+
             if (is_array($size) && count($size)) {
                 $thumb_file = "$thumbDir/" . basename($file);
                 if (!is_file($thumb_file))
@@ -716,9 +721,13 @@ class browser extends uploader {
                 $smallThumb =
                     ($size[0] <= $this->config['thumbWidth']) &&
                     ($size[1] <= $this->config['thumbHeight']) &&
-                    in_array($size[2], array(IMAGETYPE_GIF, IMAGETYPE_PNG, IMAGETYPE_JPEG));
+                        in_array($type, array("gif", "jpeg", "png"));
             } else
                 $smallThumb = false;
+            } else
+                $smallThumb = false;
+
+            $img->close();
 
             $stat = stat($file);
             if ($stat === false) continue;
