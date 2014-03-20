@@ -4,8 +4,8 @@
   * 
   * @desc Japanese localization
   * @package KCFinder
-  * @version 2.53
-  * @author yama {hidden email}
+  * @version 2.54
+  * @author yama yamamoto@kyms.jp
   * @license http://www.opensource.org/licenses/gpl-2.0.php GPLv2
   * @license http://www.opensource.org/licenses/lgpl-2.1.php LGPLv2
   */
