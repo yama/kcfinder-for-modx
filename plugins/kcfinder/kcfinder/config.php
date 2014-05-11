@@ -72,8 +72,8 @@ $_CONFIG = array(
         'files' => array(
             'upload' => true,
             'delete' => true,
-            'copy' => true,
-            'move' => true,
+            'copy'   => true,
+            'move'   => true,
             'rename' => true
         ),
 

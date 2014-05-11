@@ -532,13 +532,13 @@ class uploader {
                 !isset($this->config['watermark']['file']) ||
                 (!strlen(trim($this->config['watermark']['file'])))
             ) && (
-            (
+                (
                     !$this->config['maxImageWidth'] &&
                     !$this->config['maxImageHeight']
                 ) || (
                     ($img->width <= $this->config['maxImageWidth']) &&
                     ($img->height <= $this->config['maxImageHeight'])
-            )
+                )
             ) &&
             ($orientation == 1)
         )
@@ -570,7 +570,7 @@ class uploader {
             $this->config['maxImageWidth'] && $this->config['maxImageHeight'] &&
             !$img->resizeFit($this->config['maxImageWidth'], $this->config['maxImageHeight'])
         )
-                return false;
+            return false;
 
         // AUTO FLIP AND ROTATE FROM EXIF
         if ((($orientation == 2) && !$img->flipHorizontal()) ||
