@@ -30,9 +30,25 @@ class fastImage
 		if ($this->handle) $this->close();
 
 		$this->uri = $uri;
-		$this->handle = fopen($uri, 'r');
+    // Joy - this is a fix for URLs missing "http:"
+    if ($uri[0] == '/' && $uri[1] == '/') {
+      $uri = 'http:' . $uri;
 	}
 
+    $this->handle = fopen(
+      $uri,
+      'r',
+      false,
+      stream_context_create(array(
+        'http'=> array('timeout' => 0.5),
+      ))
+    );
+  }
+
+  public function isValid()
+  {
+    return empty($this->handle) ? false : true;
+  }
 
 	public function close()
 	{
@@ -211,8 +227,7 @@ class fastImage
 		$result = substr($this->str, $this->strpos, $n);
 		$this->strpos += $n;
 
-		// we are dealing with bytes here, so force the encoding
-		return mb_convert_encoding($result, "8BIT");
+    return $result;
 	}
 
 
