@@ -14,7 +14,10 @@ class KCFINDER
 		$_SESSION['kcf_upload_url'] = rtrim($modx->config['base_url'].$modx->config['rb_base_url'], '/');
 		$_SESSION['kcf_upload_dir'] = rtrim($modx->config['rb_base_dir'], '/');
 		$_SESSION['kcf_http_host']  = $this->getHost();
-		$_SESSION['kcf_mce_path']   = $modx->config['base_url'] . 'assets/plugins/tinymce/jscripts/tiny_mce';
+		if(is_dir($modx->config['base_path'] . 'assets/plugins/tinymce/tiny_mce'))
+			$_SESSION['kcf_mce_path']   = $modx->config['base_url'] . 'assets/plugins/tinymce/tiny_mce';
+		else
+			$_SESSION['kcf_mce_path']   = $modx->config['base_url'] . 'assets/plugins/tinymce/jscripts/tiny_mce';
 	}
 	
 	function getHost()
