@@ -289,7 +289,7 @@ class browser extends uploader {
         header("Cache-Control: private", false);
         header("Content-Type: application/octet-stream");
         header('Content-Disposition: attachment; filename="' . str_replace('"', "_", $this->post['file']) . '"');
-        header("Content-Transfer-Encoding:足 binary");
+        header("Content-Transfer-Encoding: binary");
         header("Content-Length: " . filesize($file));
         readfile($file);
         die;
