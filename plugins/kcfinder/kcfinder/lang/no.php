@@ -16,10 +16,10 @@ $lang = array(
     '_dateTimeSmall' => "%d.%m.%Y %H:%M",
 
     "You don't have permissions to upload files." =>
-    "Du har ikke tilgang til 奪 laste opp filer",
+    "Du har ikke tilgang til å laste opp filer",
 
     "You don't have permissions to browse server." =>
-    "Du har ikke tilgang til 奪 bla igjennom server",
+    "Du har ikke tilgang til å bla igjennom server",
 
     "Cannot move uploaded file to target folder." =>
     "Kan ikke flytte fil til denne mappen",
@@ -31,7 +31,7 @@ $lang = array(
     "Filen er for stor.",
 
     "The uploaded file was only partially uploaded." =>
-    "Opplastning delvis fullf淡rt.",
+    "Opplastning delvis fullført.",
 
     "No file was uploaded." =>
     "Ingen filer lastet opp",
@@ -55,7 +55,7 @@ $lang = array(
     "Kan ikke opprette mappe.",
 
     "Cannot write to upload folder." =>
-    "Ingen tilgang til 奪 skrive til denne mappen.",
+    "Ingen tilgang til å skrive til denne mappen.",
 
     "Cannot read .htaccess" =>
     "Kan ikke lese .htaccess.",
@@ -91,10 +91,10 @@ $lang = array(
     "Filnavn kan ikke starte med '.'",
 
     "Are you sure you want to delete this file?" =>
-    "Er du sikker p奪 at du vil slette denne filen?",
+    "Er du sikker på at du vil slette denne filen?",
 
     "Are you sure you want to delete this folder and all its content?" =>
-    "Er du sikker p奪 at du vil slette denne mappen og innholdet i den?",
+    "Er du sikker på at du vil slette denne mappen og innholdet i den?",
 
     "Inexistant or inaccessible folder." =>
     "Kan ikke lese mappe.",
@@ -127,10 +127,10 @@ $lang = array(
     "Kan ikke slette '{file}'.",
 
     "Click to remove from the Clipboard" =>
-    "Klikk for 奪 fjerne fra utklippstavle",
+    "Klikk for å fjerne fra utklippstavle",
 
     "This file is already added to the Clipboard." =>
-    "Filen finnes allerede p奪 utklippstavlen",
+    "Filen finnes allerede på utklippstavlen",
 
     "Copy files here" =>
     "Kopier filene til ;",
@@ -142,10 +142,10 @@ $lang = array(
     "Slett filer",
 
     "Clear the Clipboard" =>
-    "T淡m utklippstavle",
+    "Tøm utklippstavle",
 
     "Are you sure you want to delete all files in the Clipboard?" =>
-    "Er du sikker p奪 at du vil slette alle filene i utklippstavlen?",
+    "Er du sikker på at du vil slette alle filene i utklippstavlen?",
 
     "Copy {count} files" =>
     "Kopier {count} filer",
@@ -171,7 +171,7 @@ $lang = array(
     "Thumbnails" => "Miniatyrbilder",
     "List" => "Liste",
     "Name" => "Navn",
-    "Size" => "St淡rrelse",
+    "Size" => "Størrelse",
     "Date" => "Dato",
     "Descending" => "Synkende",
     "Uploading file..." => "Laster opp fil...",
@@ -192,7 +192,7 @@ $lang = array(
     // VERSION 2 NEW LABELS
 
     "Cannot rename the folder." =>
-    "Kan ikke endre navnet p奪 mappen.",
+    "Kan ikke endre navnet på mappen.",
 
     "Non-existing directory type." =>
     "Denne finnes ikke.",
@@ -204,28 +204,28 @@ $lang = array(
     "Kan ikke lese filene i utklippstavlen.",
 
     "{count} files in the Clipboard are not readable. Do you want to copy the rest?" =>
-    "{count} filer i utklippstavlen kan ikke leses, 淡nsker du kopiere resten av filene?",
+    "{count} filer i utklippstavlen kan ikke leses, ønsker du kopiere resten av filene?",
 
     "The files in the Clipboard are not movable." =>
     "Filene i utklippstavlen kan ikke flyttes",
 
     "{count} files in the Clipboard are not movable. Do you want to move the rest?" =>
-    "{count} filer i utklippstavlen kan ikke flyttes, 淡nsker du 奪 flytte resten?",
+    "{count} filer i utklippstavlen kan ikke flyttes, ønsker du å flytte resten?",
 
     "The files in the Clipboard are not removable." =>
     "Filene i utklippstavlen kan ikke flyttes.",
 
     "{count} files in the Clipboard are not removable. Do you want to delete the rest?" =>
-    "{count} filer i utklippstavlen kan ikke flyttes, 淡nsker du 奪 flytte resten?",
+    "{count} filer i utklippstavlen kan ikke flyttes, ønsker du å flytte resten?",
 
     "The selected files are not removable." =>
     "Merkede filer kan ikke flyttes.",
 
     "{count} selected files are not removable. Do you want to delete the rest?" =>
-    "{count} filer kan ikke flyttes, 淡nsker du 奪 flytte resten?",
+    "{count} filer kan ikke flyttes, ønsker du å flytte resten?",
 
     "Are you sure you want to delete all selected files?" =>
-    "Er du sikker p奪 at du 淡nsker 奪 slette alle merkede filer?",
+    "Er du sikker på at du ønsker å slette alle merkede filer?",
 
     "Failed to delete {count} files/folders." =>
     "Feil ved sletting av {count} filer/mapper.",

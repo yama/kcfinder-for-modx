@@ -17,13 +17,13 @@ $lang = array(
     '_dateTimeSmall' => "%d.%m.%Y %H:%M",
 
     "You don't have permissions to upload files." =>
-    "Nﾃ｣o tem permissﾃ｣o para enviar ficheiros.",
+    "Não tem permissão para enviar ficheiros.",
 
     "You don't have permissions to browse server." =>
-    "Nﾃ｣o tem permissﾃ｣o para navegar no servidor.",
+    "Não tem permissão para navegar no servidor.",
 
     "Cannot move uploaded file to target folder." =>
-    "Nﾃ｣o pode mover ficheiros enviados para a pasta definida.",
+    "Não pode mover ficheiros enviados para a pasta definida.",
 
     "Unknown error." =>
     "Erro indefinido.",
@@ -38,100 +38,100 @@ $lang = array(
     "Nenhum ficheiro enviado.",
 
     "Missing a temporary folder." =>
-    "Falta a pasta temporﾃ｡ria.",
+    "Falta a pasta temporária.",
 
     "Failed to write file." =>
-    "Nﾃ｣o foi poss・ｽvel guardar o ficheiro.",
+    "Não foi poss�vel guardar o ficheiro.",
 
     "Denied file extension." =>
-    "Extensﾃ｣o do ficheiro invﾃ｡lida.",
+    "Extensão do ficheiro inválida.",
 
     "Unknown image format/encoding." =>
-    "Formato/codificaﾃｧﾃ｣o da imagem desconhecido.",
+    "Formato/codificação da imagem desconhecido.",
 
     "The image is too big and/or cannot be resized." =>
-    "A imagem ﾃｩ muito grande e nﾃ｣o pode ser redimensionada.",
+    "A imagem é muito grande e não pode ser redimensionada.",
 
     "Cannot create {dir} folder." =>
-    "Nﾃ｣o foi poss・ｽvel criar a pasta '{dir}'.",
+    "Não foi poss�vel criar a pasta '{dir}'.",
 
     "Cannot write to upload folder." =>
-    "Nﾃ｣o foi poss・ｽvel guardar o ficheiro.",
+    "Não foi poss�vel guardar o ficheiro.",
 
     "Cannot read .htaccess" =>
-    "Nﾃ｣o foi poss・ｽvel ler o ficheiro '.htaccess'.",
+    "Não foi poss�vel ler o ficheiro '.htaccess'.",
 
     "Incorrect .htaccess file. Cannot rewrite it!" =>
-    "Ficheiro '.htaccess' incorrecto. Nﾃ｣o foi poss・ｽvel altera-lo.",
+    "Ficheiro '.htaccess' incorrecto. Não foi poss�vel altera-lo.",
 
     "Cannot read upload folder." =>
-    "Nﾃ｣o foi poss・ｽvel ler a pasta de upload.",
+    "Não foi poss�vel ler a pasta de upload.",
 
     "Cannot access or create thumbnails folder." =>
-    "Nﾃ｣o foi poss・ｽvel aceder ou criar a pasta de miniaturas.",
+    "Não foi poss�vel aceder ou criar a pasta de miniaturas.",
 
     "Cannot access or write to upload folder." =>
-    "Nﾃ｣o foi poss・ｽvel aceder ou criar a pasta de upload.",
+    "Não foi poss�vel aceder ou criar a pasta de upload.",
 
     "Please enter new folder name." =>
     "Por favor insira o nome da pasta.",
 
     "Unallowable characters in folder name." =>
-    "Caracteres nﾃ｣o autorizados no nome da pasta.",
+    "Caracteres não autorizados no nome da pasta.",
 
     "Folder name shouldn't begins with '.'" =>
-    "O nome da pasta nﾃ｣o deve come・ｽar por '.'.",
+    "O nome da pasta não deve come�ar por '.'.",
 
     "Please enter new file name." =>
     "Por favor defina o nome do ficheiro.",
 
     "Unallowable characters in file name." =>
-    "Caracteres nﾃ｣o autorizados no nome do ficheiro.",
+    "Caracteres não autorizados no nome do ficheiro.",
 
     "File name shouldn't begins with '.'" =>
-    "O nome do ficheiro nﾃ｣o deve come・ｽar por '.'.",
+    "O nome do ficheiro não deve come�ar por '.'.",
 
     "Are you sure you want to delete this file?" =>
     "Tem a certeza que deseja apagar este ficheiro?",
 
     "Are you sure you want to delete this folder and all its content?" =>
-    "Tem a certeza que deseja apagar esta pasta e todos os seus conteﾃｺdos?",
+    "Tem a certeza que deseja apagar esta pasta e todos os seus conteúdos?",
 
     "Inexistant or inaccessible folder." =>
-    "Pasta inexistente ou inacess・ｽvel.",
+    "Pasta inexistente ou inacess�vel.",
 
     "Undefined MIME types." =>
     "Tipos MIME indefinidos.",
 
     "Fileinfo PECL extension is missing." =>
-    "Falta a extensﾃ｣o PECL nas informaﾃｧﾃｵes do ficheiro.",
+    "Falta a extensão PECL nas informações do ficheiro.",
 
     "Opening fileinfo database failed." =>
-    "Erro a abrir a informaﾃｧﾃ｣o do ficheiro.",
+    "Erro a abrir a informação do ficheiro.",
 
     "You can't upload such files." =>
-    "Nﾃ｣o pode enviar esse tipo de ficheiros.",
+    "Não pode enviar esse tipo de ficheiros.",
 
     "The file '{file}' does not exist." =>
-    "O ficheiro '{file}' nﾃ｣o existe.",
+    "O ficheiro '{file}' não existe.",
 
     "Cannot read '{file}'." =>
-    "Nﾃ｣o pode ler '{file}'.",
+    "Não pode ler '{file}'.",
 
     "Cannot copy '{file}'." =>
-    "Nﾃ｣o pode copiar '{file}'.",
+    "Não pode copiar '{file}'.",
 
     "Cannot move '{file}'." =>
-    "Nﾃ｣o pode mover '{file}'.",
+    "Não pode mover '{file}'.",
 
     "Cannot delete '{file}'." =>
-    "Nﾃ｣o pode apagar '{file}'.",
+    "Não pode apagar '{file}'.",
 
     "Click to remove from the Clipboard" =>
     "Clique aqui para remover do Clipboard",
 
     "This file is already added to the Clipboard." =>
-    "Este ficheiros jﾃ｡ foi adicionado ao Clipboard.",
+    "Este ficheiros já foi adicionado ao Clipboard.",
 
     "Copy files here" =>
     "Copiar ficheiros para aqui",
@@ -146,7 +146,7 @@ $lang = array(
     "Limpar Clipboard",
 
     "Are you sure you want to delete all files in the Clipboard?" =>
-    "Tem a certeza que deseja apagar todos os ficheiros que estﾃ｣o no Clipboard?",
+    "Tem a certeza que deseja apagar todos os ficheiros que estão no Clipboard?",
 
     "Copy {count} files" =>
     "Copiar {count} ficheiros",
@@ -162,7 +162,7 @@ $lang = array(
 
     "Upload" => "Enviar",
     "Refresh" => "Actualizar",
-    "Settings" => "Preferﾃｪncias",
+    "Settings" => "Preferências",
     "Maximize" => "Maximizar",
     "About" => "Acerca de",
     "files" => "Ficheiros",
@@ -193,37 +193,37 @@ $lang = array(
     // VERSION 2 NEW LABELS
 
     "Cannot rename the folder." =>
-    "Nﾃ｣o pode alterar o nome da pasta.",
+    "Não pode alterar o nome da pasta.",
 
     "Non-existing directory type." =>
     "Tipo de pasta inexistente.",
 
     "Cannot delete the folder." =>
-    "Nﾃ｣o pode apagar a pasta.",
+    "Não pode apagar a pasta.",
 
     "The files in the Clipboard are not readable." =>
-    "Os ficheiros que estﾃ｣o no Clipboard nﾃ｣o podem ser copiados.",
+    "Os ficheiros que estão no Clipboard não podem ser copiados.",
 
     "{count} files in the Clipboard are not readable. Do you want to copy the rest?" =>
-    "{count} ficheiros do Clipboard nﾃ｣o podem ser copiados. Pretende copiar os restantes?",
+    "{count} ficheiros do Clipboard não podem ser copiados. Pretende copiar os restantes?",
 
     "The files in the Clipboard are not movable." =>
-    "Os ficheiros que estﾃ｣o no Clipboard nﾃ｣o podem ser movidos.",
+    "Os ficheiros que estão no Clipboard não podem ser movidos.",
 
     "{count} files in the Clipboard are not movable. Do you want to move the rest?" =>
-    "{count} ficheiros do Clipboard nﾃ｣o podem ser movidos. Pretende mover os restantes?",
+    "{count} ficheiros do Clipboard não podem ser movidos. Pretende mover os restantes?",
 
     "The files in the Clipboard are not removable." =>
-    "Os ficheiros que estﾃ｣o no Clipboard nﾃ｣o podem ser removidos.",
+    "Os ficheiros que estão no Clipboard não podem ser removidos.",
 
     "{count} files in the Clipboard are not removable. Do you want to delete the rest?" =>
-    "{count} ficheiros do Clipboard nﾃ｣o podem ser removidos. Pretende apagar os restantes?",
+    "{count} ficheiros do Clipboard não podem ser removidos. Pretende apagar os restantes?",
 
     "The selected files are not removable." =>
-    "Os ficheiros seleccionados nﾃ｣o podem ser removidos.",
+    "Os ficheiros seleccionados não podem ser removidos.",
 
     "{count} selected files are not removable. Do you want to delete the rest?" =>
-    "Nﾃ｣o pode remover {count} ficheiros. Pretende apagar os restantes?",
+    "Não pode remover {count} ficheiros. Pretende apagar os restantes?",
 
     "Are you sure you want to delete all selected files?" =>
     "Tem a certeza que deseja apagar os ficheiros seleccionados?",
@@ -232,7 +232,7 @@ $lang = array(
     "Ocorreu um erro a apagar {count} ficheiros/pastas.",
 
     "A file or folder with that name already exists." =>
-    "Jﾃ｡ existe um ficheiro ou pasta com esse nome.",
+    "Já existe um ficheiro ou pasta com esse nome.",
 
     "selected files" => "Ficheiros seleccionados",
     "Type" => "Tipo",
