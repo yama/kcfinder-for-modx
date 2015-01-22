@@ -1,6 +1,6 @@
 This folder contains files for designing Dark visual theme for KCFinder
 
-Some Icons are Copyright © Yusuke Kamiyamane. All rights reserved. Licensed under a Creative Commons Attribution 3.0 license.
+Some Icons are Copyright 息 Yusuke Kamiyamane. All rights reserved. Licensed under a Creative Commons Attribution 3.0 license.
 http://p.yusukekamiyamane.com
 
 Other icons are taken from default KDE4 visual theme
