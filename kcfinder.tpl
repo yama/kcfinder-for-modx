@@ -5,7 +5,7 @@
  * web file manager
  *
  * @category 	plugin
- * @version 	2.53
+ * @version 	3.12
  * @license 	http://www.opensource.org/licenses/gpl-2.0.php GNU Public License Version 2 (GPL2)
  * @internal	@events OnDocFormRender,OnDocFormPrerender
  * @internal	@modx_category Manager and Admin
