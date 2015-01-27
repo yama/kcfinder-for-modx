@@ -13,6 +13,7 @@ class KCFINDER
 		$this->kcf_url  = MODX_BASE_URL  . $kcf_dir;
 		$_SESSION['kcf_upload_url'] = rtrim($modx->config['base_url'].$modx->config['rb_base_url'], '/');
 		$_SESSION['kcf_upload_dir'] = rtrim($modx->config['rb_base_dir'], '/');
+		$_SESSION['image_limit_width'] = $modx->config['image_limit_width'] ? $modx->config['image_limit_width'] : 800;
 		$_SESSION['kcf_http_host']  = $this->getHost();
 		if(is_dir($modx->config['base_path'] . 'assets/plugins/tinymce/tiny_mce'))
 			$_SESSION['kcf_mce_path']   = $modx->config['base_url'] . 'assets/plugins/tinymce/tiny_mce';
