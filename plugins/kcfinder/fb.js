@@ -45,8 +45,8 @@ function openKCFinder(field_name, url, type, win)
 	{
 		file: kcf_url,
 		title: 'KCFinder',
-		width: 700,
-		height: 500,
+		width: window.innerWidth * 0.8,
+		height:window.innerHeight * 0.8,
 		resizable: "yes",
 		inline: true,
 		close_previous: "no",
