@@ -140,14 +140,12 @@ $_CONFIG['maxImageWidth']   = $_SESSION['image_limit_width'];
 $_CONFIG['maxImageHeight']  = 800;
 $_CONFIG['thumbWidth']      = 75;
 $_CONFIG['thumbHeight']     = 75;
-$_CONFIG['thumbsDir']       = '.thumbs';
+$_CONFIG['thumbsDir']       = 'cache/.thumbs';
 $_CONFIG['jpegQuality']     = 80;
 $_CONFIG['cookieDomain']    = $_SESSION['kcf_http_host'];
 $_CONFIG['cookiePath']      = '';
 $_CONFIG['cookiePrefix']    = 'KCFINDER_';
 $_CONFIG['_check4htaccess'] = false;
 $_CONFIG['_tinyMCEPath']    = $_SESSION['kcf_mce_path'];
-
-$_CONFIG['disabled']        = false;
 
 return $_CONFIG;
