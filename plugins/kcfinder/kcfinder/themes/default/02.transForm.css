@@ -33,7 +33,6 @@
     background: -ms-linear-gradient(top, #e3e3e3, #fff);
     background: -o-linear-gradient(top, #e3e3e3, #fff);
     background: linear-gradient(to bottom, #e3e3e3, #fff);
-    box-shadow: inset 0 0 2px #6b6b6b;
     border: 1px solid #6b6b6b;
     border-radius: 4px;
     color: #6b6b6b;
@@ -54,7 +53,6 @@
     background: -ms-linear-gradient(top, #d2eaf6, #fff);
     background: -o-linear-gradient(top, #d2eaf6, #fff);
     background: linear-gradient(to bottom, #d2eaf6, #fff);
-    box-shadow: inset 0 0 2px #1b79b8;
     border: 1px solid #1b79b8;
     color: #1b79b8;
 }
@@ -68,7 +66,6 @@
     background: -ms-linear-gradient(top, #ababab, #6b6b6b);
     background: -o-linear-gradient(top, #ababab, #6b6b6b);
     background: linear-gradient(to bottom, #ababab, #6b6b6b);
-    box-shadow: inset 0 0 7px #fff, inset 0 0 3px #fff;
     border: 1px solid #6b6b6b;
     border-radius: 4px;
     padding: 6px 10px;
@@ -93,15 +90,6 @@
 .tf-multiple .tf-selected,
 .tf-button {
     color: #fff;
-    text-shadow:
-        1px 0 rgba(0,0,0,.2),
-        -1px 0 rgba(0,0,0,.2),
-        0 -1px rgba(0,0,0,.2),
-        0 1px rgba(0,0,0,.2),
-        1px 1px rgba(0,0,0,.2),
-        -1px -1px rgba(0,0,0,.2),
-        1px -1px rgba(0,0,0,.2),
-        -1px 1px rgba(0,0,0,.2);
 }
 
 /* COMMON - END */
@@ -145,7 +133,6 @@
     background: -ms-linear-gradient(top, #1b79b8, #59b5f2);
     background: -o-linear-gradient(top, #1b79b8, #59b5f2);
     background: linear-gradient(to bottom, #1b79b8, #59b5f2);
-    box-shadow: inset 0 0 7px #fff, inset 0 0 3px #fff;
 }
 .tf-select.tf-opened .tf-button {
     background: #ababab;
@@ -224,7 +211,6 @@
     background: -ms-linear-gradient(top, #54b0e0, #b7def2);
     background: -o-linear-gradient(top, #54b0e0, #b7def2);
     background: linear-gradient(to bottom, #54b0e0, #b7def2);
-    box-shadow: inset 0 0 2px #fff, inset 0 0 2px #fff;
     border-color: #54b0e0;
 }
 .tf-multiple .tf-hover,
@@ -376,7 +362,6 @@
     background: -ms-linear-gradient(top, #e4e4e4, #fff);
     background: -o-linear-gradient(top, #e4e4e4, #fff);
     background: linear-gradient(to bottom, #e4e4e4, #fff);
-    box-shadow: inset 0 0 2px #a2a2a2;
     border: 1px solid #a2a2a2;
     border-radius: 4px;
     color: #888;
@@ -458,7 +443,6 @@
 /* FIELD SET */
 .tf-fieldset {
 border: 1px solid #6B6B6B;
-    box-shadow: inset 0 0 4px #6B6B6B;
     border-radius: 4px;
     background: #fff;
     background: -webkit-linear-gradient(top, #e3e3e3, #fff);
@@ -472,16 +456,6 @@ border: 1px solid #6B6B6B;
 .tf-fieldset legend {
     font-weight: bold;
     color: #6B6B6B;
-    text-shadow:
-        1px 0 rgba(255,255,255,.5),
-        -1px 0 rgba(255,255,255,.5),
-        0 -1px rgba(255,255,255,.5),
-        0 1px rgba(255,255,255,.5),
-        1px 1px rgba(255,255,255,.5),
-        -1px -1px rgba(255,255,255,.5),
-        1px -1px rgba(255,255,255,.5),
-        -1px 1px rgba(255,255,255,.5),
-        0 0 5px #fff;
 }
 
 /* MISC */

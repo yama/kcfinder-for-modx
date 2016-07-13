@@ -32,22 +32,12 @@ tr.selected > td,
 tr.selected:hover > td,
 #menu .list div a:hover {
     color: #fff;
-    text-shadow:
-        1px 0 rgba(0,0,0,.2),
-        -1px 0 rgba(0,0,0,.2),
-        0 -1px rgba(0,0,0,.2),
-        0 1px rgba(0,0,0,.2),
-        1px 1px rgba(0,0,0,.2),
-        -1px -1px rgba(0,0,0,.2),
-        1px -1px rgba(0,0,0,.2),
-        -1px 1px rgba(0,0,0,.2);
 }
 
 #files,
 #folders,
 #toolbar a.selected {
     border: 1px solid #6B6B6B;
-    box-shadow: inset 0 0 4px #6B6B6B;
     border-radius: 4px;
     background: #fff;
     background: -webkit-linear-gradient(top, #f0f0f0, #fff);
@@ -88,7 +78,6 @@ tr.selected:hover > td,
     background: -ms-linear-gradient(top, #59b5f2, #1b79b8);
     background: -o-linear-gradient(top, #59b5f2, #1b79b8);
     background: linear-gradient(to bottom, #59b5f2, #1b79b8);
-    box-shadow: inset 0 0 7px #fff, inset 0 0 3px #fff;
 }
 #toolbar a[href="kcact:upload"] span {
     background-image: url(img/icons/upload.png);
@@ -151,7 +140,6 @@ span.current {
     background-image: url(img/tree/folder.png);
     background-color: #3b98d6;
     border-color: #3b98d6;
-    box-shadow: inset 0 0 7px #fff, inset 0 0 3px #fff;
 }
 span.regular {
     transition: .3s;
@@ -162,7 +150,6 @@ span.regular:hover, span.context, a.drag > span.folder, #clipboard div:hover {
     transition: .3s;
     background-color: #c6c6c6;
     border-color: #c6c6c6;
-    box-shadow: inset 0 0 7px #fff, inset 0 0 3px #fff;
 }
 span.opened {
     background-image: url(img/tree/minus.png);
@@ -185,7 +172,6 @@ div.file {
 }
 div.file:hover {
     border-color: #aaa;
-    box-shadow: inset 0 0 7px #fff, inset 0 0 3px #fff;
     background: #c6c6c6;
     background: -webkit-linear-gradient(top, #e7e7e7, #c6c6c6);
     background: -moz-linear-gradient(top, #e7e7e7, #c6c6c6);
@@ -215,7 +201,6 @@ div.file .size {
     background: -ms-linear-gradient(top, #7dc2f2, #3b98d6);
     background: -o-linear-gradient(top, #7dc2f2, #3b98d6);
     background: linear-gradient(to bottom, #7dc2f2, #3b98d6);
-    box-shadow: inset 0 0 7px #fff, inset 0 0 3px #fff;
 }
 tr.file > td {
     padding: 3px 4px;
@@ -302,7 +287,6 @@ a.denied:hover {
 #clipboard.selected div, #clipboard.selected div:hover {
     background-color: #3b98d6;
     border-color: #3b98d6;
-    box-shadow: inset 0 0 7px #fff, inset 0 0 3px #fff;
 }
 #menu .list a, #menu .list a.ui-state-focus {
     margin: -1px 0 0 -1px;
@@ -325,7 +309,6 @@ a.denied:hover {
     background: -ms-linear-gradient(top, #1b79b8, #59b5f2);
     background: -o-linear-gradient(top, #1b79b8, #59b5f2);
     background: linear-gradient(to bottom, #1b79b8, #59b5f2);
-    box-shadow: inset 0 0 7px #fff, inset 0 0 3px #fff;
 }
 #menu .list {
     overflow:hidden;
@@ -368,7 +351,6 @@ a.denied:hover {
 #loading, #checkver > span.loading {
     background: url(img/loading.gif);
     border: 1px solid #3687e2;
-    box-shadow: 0 0 3px #3687e2, inset 0 0 4px #fff, inset 0 0 5px #fff;
     padding: 6px 10px;
     border-radius: 4px;
 }
