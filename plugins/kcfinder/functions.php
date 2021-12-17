@@ -5,7 +5,7 @@ class KCFINDER
 	var $kcf_path;
 	var $kcf_url;
 	
-	function KCFINDER($kcf_dir)
+	function __construct($kcf_dir)
 	{
 		global $modx;
 		
